@@ -172,3 +172,7 @@ PalAdminPanel/
 ## 免责声明
 
 本项目是非官方社区工具，与 Pocketpair 或 PalDefender 项目维护者无隶属关系。请先备份存档，并在你有权管理的服务器上使用。
+
+## 开源许可证
+
+本项目采用 [MIT License](LICENSE) 开源。Copyright (c) 2026 TheZafkiel。
