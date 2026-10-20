@@ -1,0 +1,18 @@
+{
+  "server_name": "Palworld 局域网服务器",
+  "rcon_host": "192.168.1.100",
+  "rcon_port": 25575,
+  "rcon_password": "CHANGE_ME",
+  "rcon_timeout": 3.0,
+  "rest_host": "192.168.1.100",
+  "rest_port": 17993,
+  "rest_token": "CHANGE_ME_REST_TOKEN",
+  "rest_timeout": 8.0,
+  "web_host": "127.0.0.1",
+  "web_port": 5000,
+  "web_username": "admin",
+  "web_password_hash": "GENERATED_BY_SETUP_CONFIG",
+  "secret_key": "GENERATED_BY_SETUP_CONFIG",
+  "max_players": 32,
+  "session_hours": 8
+}

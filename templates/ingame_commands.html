@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}游戏内命令 · PalAdminPanel{% endblock %}
+{% block heading %}游戏内命令{% endblock %}
+{% block content %}
+<div class="page-intro"><div><p class="eyebrow">IN-GAME ADMIN CHEATSHEET</p><h2>边玩边复制命令</h2><p>复制后回到游戏聊天框粘贴。页面不会保存或显示你的管理员密码。</p></div></div>
+<section class="login-command-grid">
+  <div class="panel login-command-card"><p class="eyebrow">PALWORLD BUILT-IN</p><h3>原版管理员登录</h3><code>/AdminPassword &lt;管理员密码&gt;</code><button type="button" class="button secondary copy-value" data-value="/AdminPassword &lt;管理员密码&gt;">复制模板</button></div>
+  <div class="panel login-command-card"><p class="eyebrow">PALDEFENDER 1.8.3</p><h3>PalDefender 管理员登录</h3><code>/adminlogin &lt;管理员密码&gt;</code><button type="button" class="button secondary copy-value" data-value="/adminlogin &lt;管理员密码&gt;">复制模板</button></div>
+</section>
+{% if players_error %}<div class="inline-error">{{ players_error }}</div>{% endif %}
+<section class="panel ingame-toolbar">
+  <div><label>套用玩家<select class="ingame-player"><option value="">保留 &lt;UserId&gt; 占位符</option>{% for player in players %}<option value="{{ player.paldefender_id }}">{{ player.name }} · {{ player.paldefender_id }}</option>{% endfor %}</select></label></div>
+  <div><label>搜索命令<input class="ingame-command-filter" type="search" placeholder="中文用途、命令名或参数"></label></div>
+  <p>选择玩家后，复制命令时会自动替换模板里的 UserId。</p>
+</section>
+<section class="ingame-command-grid">
+  {% for command in commands %}
+  <article class="panel ingame-command-card" data-search="{{ command.name }} {{ command.title }} {{ command.detail }} {{ command.syntax }}" data-template="/{{ command.syntax }}">
+    <div><code>/{{ command.name }}</code><span>{{ command.title }}</span></div>
+    <p>{{ command.detail }}</p><pre>/{{ command.syntax }}</pre>
+    <button type="button" class="button ghost small copy-ingame-command">复制命令模板</button>
+  </article>
+  {% endfor %}
+</section>
+<section class="panel id-reference-panel">
+  <div class="panel-head"><div><p class="eyebrow">ID QUICK COPY</p><h3>物品、帕鲁与蛋 ID</h3></div></div>
+  <div class="id-reference-grid">
+    <div><label>搜索物品<input class="catalog-filter" type="search" data-target="ingame-item-id" placeholder="中文名、英文名、ItemId"></label><select id="ingame-item-id" size="7">{% for item in items %}<option value="{{ item.id }}" data-search="{{ item.name_zh }} {{ item.name }} {{ item.id }}">{{ item.name_zh }} · {{ item.name }} · {{ item.id }}</option>{% endfor %}</select><div class="catalog-count" data-for="ingame-item-id"></div><button type="button" class="button secondary small copy-selected" data-target="ingame-item-id">复制 ItemId</button></div>
+    <div><label>搜索帕鲁<input class="catalog-filter" type="search" data-target="ingame-pal-id" placeholder="中文名、英文名、PalId"></label><select id="ingame-pal-id" size="7">{% for pal in pals %}<option value="{{ pal.id }}" data-search="{{ pal.name_zh }} {{ pal.name }} {{ pal.id }}">#{{ pal.dex }} · {{ pal.name_zh }} · {{ pal.name }} · {{ pal.id }}</option>{% endfor %}</select><div class="catalog-count" data-for="ingame-pal-id"></div><button type="button" class="button secondary small copy-selected" data-target="ingame-pal-id">复制 PalId</button></div>
+    <div><label>EggId<select id="ingame-egg-id" size="7">{% for egg in egg_ids %}<option value="{{ egg.id }}">{{ egg.name }} · {{ egg.id }}</option>{% endfor %}</select></label><button type="button" class="button secondary small copy-selected" data-target="ingame-egg-id">复制 EggId</button></div>
+  </div>
+</section>
+<div class="copy-toast" role="status" aria-live="polite"></div>
+{% endblock %}

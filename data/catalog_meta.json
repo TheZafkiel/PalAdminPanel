@@ -1,0 +1,14 @@
+{
+  "updated_at": "2026-10-20T05:36:55.483657+00:00",
+  "items": 1891,
+  "pals": 288,
+  "sources": {
+    "items": "https://paldeck.cc/items",
+    "pals": "https://paldeck.cc/pals",
+    "item_localization": "https://raw.githubusercontent.com/zaigie/palworld-server-tool/main/web/src/assets/items.json",
+    "pal_localization": "https://raw.githubusercontent.com/zaigie/palworld-server-tool/main/web/src/assets/pal.json"
+  },
+  "item_filter": "legal_in_game=true",
+  "localized_items": 1891,
+  "localized_pals": 288
+}

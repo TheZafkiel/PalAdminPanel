@@ -1,0 +1,4 @@
+{% extends "base.html" %}
+{% block title %}{{ code }} · PalAdminPanel{% endblock %}
+{% block heading %}请求未完成{% endblock %}
+{% block content %}<section class="panel empty-state tall"><span>!</span><h2>{{ code }}</h2><p>{{ message }}</p><a class="button secondary" href="{{ url_for('dashboard') }}">返回概览</a></section>{% endblock %}

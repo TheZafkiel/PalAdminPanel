@@ -1,0 +1,2679 @@
+[
+  {
+    "id": "SheepBall",
+    "name": "Lamball",
+    "name_zh": "棉悠悠",
+    "dex": "1",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "PinkCat",
+    "name": "Cattiva",
+    "name_zh": "捣蛋猫",
+    "dex": "2",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "ChickenPal",
+    "name": "Chikipi",
+    "name_zh": "皮皮鸡",
+    "dex": "3",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "Carbunclo",
+    "name": "Lifmunk",
+    "name_zh": "翠叶鼠",
+    "dex": "4",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "BluePlatypus",
+    "name": "Fuack",
+    "name_zh": "冲浪鸭",
+    "dex": "5",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "BluePlatypus_Fire",
+    "name": "Fuack Ignis",
+    "name_zh": "热浪鸭",
+    "dex": "5B",
+    "elements": [
+      "Water",
+      "Fire"
+    ]
+  },
+  {
+    "id": "CuteFox",
+    "name": "Vixy",
+    "name_zh": "玉藻狐",
+    "dex": "6",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "FlyingManta",
+    "name": "Celaray",
+    "name_zh": "鲁米儿",
+    "dex": "7",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "FlyingManta_Thunder",
+    "name": "Celaray Lux",
+    "name_zh": "雷米儿",
+    "dex": "7B",
+    "elements": [
+      "Water",
+      "Electric"
+    ]
+  },
+  {
+    "id": "WoolFox",
+    "name": "Cremis",
+    "name_zh": "米露菲",
+    "dex": "8",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "KendoFrog",
+    "name": "Croajiro",
+    "name_zh": "武道蛙",
+    "dex": "9",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "KendoFrog_Dark",
+    "name": "Croajiro Noct",
+    "name_zh": "极道蛙",
+    "dex": "9B",
+    "elements": [
+      "Water",
+      "Dark"
+    ]
+  },
+  {
+    "id": "LeafMomonga",
+    "name": "Herbil",
+    "name_zh": "达鼠泥",
+    "dex": "10",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ]
+  },
+  {
+    "id": "Ganesha",
+    "name": "Teafant",
+    "name_zh": "壶小象",
+    "dex": "11",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "PlantSlime",
+    "name": "Gumoss",
+    "name_zh": "叶泥泥",
+    "dex": "12",
+    "elements": [
+      "Grass",
+      "Ground"
+    ]
+  },
+  {
+    "id": "SamuraiDog",
+    "name": "Pupperai",
+    "name_zh": "宗铭丸",
+    "dex": "13",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "CloverFairy",
+    "name": "Clovee",
+    "name_zh": "幸叶茸",
+    "dex": "14",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ]
+  },
+  {
+    "id": "Hedgehog",
+    "name": "Jolthog",
+    "name_zh": "电棘鼠",
+    "dex": "15",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "Hedgehog_Ice",
+    "name": "Jolthog Cryst",
+    "name_zh": "冰刺鼠",
+    "dex": "15B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "NegativeKoala",
+    "name": "Depresso",
+    "name_zh": "瞅什魔",
+    "dex": "16",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "Penguin",
+    "name": "Pengullet",
+    "name_zh": "企丸丸",
+    "dex": "17",
+    "elements": [
+      "Water",
+      "Ice"
+    ]
+  },
+  {
+    "id": "Penguin_Electric",
+    "name": "Pengullet Lux",
+    "name_zh": "闪丸丸",
+    "dex": "17B",
+    "elements": [
+      "Water",
+      "Electric"
+    ]
+  },
+  {
+    "id": "CaptainPenguin",
+    "name": "Penking",
+    "name_zh": "企丸王",
+    "dex": "18",
+    "elements": [
+      "Water",
+      "Ice"
+    ]
+  },
+  {
+    "id": "CaptainPenguin_Black",
+    "name": "Penking Lux",
+    "name_zh": "闪丸王",
+    "dex": "18B",
+    "elements": [
+      "Water",
+      "Electric"
+    ]
+  },
+  {
+    "id": "WizardOwl",
+    "name": "Hoocrates",
+    "name_zh": "啼卡尔",
+    "dex": "19",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "Alpaca",
+    "name": "Melpaca",
+    "name_zh": "美露帕",
+    "dex": "20",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "KingAlpaca",
+    "name": "Kingpaca",
+    "name_zh": "君王美露帕",
+    "dex": "21",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "KingAlpaca_Ice",
+    "name": "Kingpaca Cryst",
+    "name_zh": "冰帝美露帕",
+    "dex": "21B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "DreamDemon",
+    "name": "Daedream",
+    "name_zh": "寐魔",
+    "dex": "22",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "Monkey",
+    "name": "Tanzee",
+    "name_zh": "新叶猿",
+    "dex": "23",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "Monkey_Fire",
+    "name": "Tanzee Ignis",
+    "name_zh": "秋叶猿",
+    "dex": "23B",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "NightFox",
+    "name": "Nox",
+    "name_zh": "露娜蒂",
+    "dex": "24",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "LavaGirl",
+    "name": "Flambelle",
+    "name_zh": "融焰娘",
+    "dex": "25",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "FlameBambi",
+    "name": "Rooby",
+    "name_zh": "燎火鹿",
+    "dex": "26",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "Bastet",
+    "name": "Mau",
+    "name_zh": "喵丝特",
+    "dex": "27",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "Bastet_Ice",
+    "name": "Mau Cryst",
+    "name_zh": "冰丝特",
+    "dex": "27B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "Boar",
+    "name": "Rushoar",
+    "name_zh": "草莽猪",
+    "dex": "28",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "Kitsunebi",
+    "name": "Foxparks",
+    "name_zh": "火绒狐",
+    "dex": "29",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "Kitsunebi_Ice",
+    "name": "Foxparks Cryst",
+    "name_zh": "雪绒狐",
+    "dex": "29B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "NegativeOctopus",
+    "name": "Killamari",
+    "name_zh": "勾魂鱿",
+    "dex": "30",
+    "elements": [
+      "Dark",
+      "Water"
+    ]
+  },
+  {
+    "id": "NegativeOctopus_Neutral",
+    "name": "Killamari Primo",
+    "name_zh": "蚀魂鱿",
+    "dex": "30B",
+    "elements": [
+      "Neutral",
+      "Water"
+    ]
+  },
+  {
+    "id": "CuteMole",
+    "name": "Fuddler",
+    "name_zh": "遁地鼠",
+    "dex": "31",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "Deer",
+    "name": "Eikthyrdeer",
+    "name_zh": "紫霞鹿",
+    "dex": "32",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "Deer_Ground",
+    "name": "Eikthyrdeer Terra",
+    "name_zh": "祇岳鹿",
+    "dex": "32B",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "Garm",
+    "name": "Direhowl",
+    "name_zh": "猎狼",
+    "dex": "33",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "BerryGoat",
+    "name": "Caprity",
+    "name_zh": "灌木羊",
+    "dex": "34",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "BerryGoat_Dark",
+    "name": "Caprity Noct",
+    "name_zh": "郁木羊",
+    "dex": "34B",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "MopBaby",
+    "name": "Swee",
+    "name_zh": "毛掸儿",
+    "dex": "35",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "MopKing",
+    "name": "Sweepa",
+    "name_zh": "毛老爹",
+    "dex": "36",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "TentacleTurtle",
+    "name": "Turtacle",
+    "name_zh": "盔盔仔",
+    "dex": "37",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "TentacleTurtle_Ground",
+    "name": "Turtacle Terra",
+    "name_zh": "金盔仔",
+    "dex": "37B",
+    "elements": [
+      "Water",
+      "Ground"
+    ]
+  },
+  {
+    "id": "WindChimes",
+    "name": "Hangyu",
+    "name_zh": "吊缚灵",
+    "dex": "38",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "WindChimes_Ice",
+    "name": "Hangyu Cryst",
+    "name_zh": "冰缚灵",
+    "dex": "38B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "SweetsSheep",
+    "name": "Woolipop",
+    "name_zh": "棉花糖",
+    "dex": "39",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "SweetsSheep_Ground",
+    "name": "Woolipop Terra",
+    "name_zh": "可可棉花糖",
+    "dex": "39B",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "CowPal",
+    "name": "Mozzarina",
+    "name_zh": "波霸牛",
+    "dex": "40",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "BlueDragon",
+    "name": "Azurobe",
+    "name_zh": "碧海龙",
+    "dex": "41",
+    "elements": [
+      "Water",
+      "Dragon"
+    ]
+  },
+  {
+    "id": "BlueDragon_Ice",
+    "name": "Azurobe Cryst",
+    "name_zh": "碧月龙",
+    "dex": "41B",
+    "elements": [
+      "Ice",
+      "Dragon"
+    ]
+  },
+  {
+    "id": "ElecCat",
+    "name": "Sparkit",
+    "name_zh": "伏特喵",
+    "dex": "42",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "Kelpie",
+    "name": "Kelpsea",
+    "name_zh": "水灵儿",
+    "dex": "43",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "Kelpie_Fire",
+    "name": "Kelpsea Ignis",
+    "name_zh": "火灵儿",
+    "dex": "43B",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "PinkRabbit",
+    "name": "Ribbuny",
+    "name_zh": "姬小兔",
+    "dex": "44",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "PinkRabbit_Grass",
+    "name": "Ribbuny Botan",
+    "name_zh": "艾小兔",
+    "dex": "44B",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "JellyfishFairy",
+    "name": "Jelliette",
+    "name_zh": "海月仙",
+    "dex": "45",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "JellyfishGhost",
+    "name": "Jellroy",
+    "name_zh": "海月灵",
+    "dex": "46",
+    "elements": [
+      "Water",
+      "Dark"
+    ]
+  },
+  {
+    "id": "ClioneTwins",
+    "name": "Amione",
+    "name_zh": "莉欧·莉涅",
+    "dex": "47",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "OctopusGirl",
+    "name": "Gloopie",
+    "name_zh": "墨沫姬",
+    "dex": "48",
+    "elements": [
+      "Water",
+      "Dark"
+    ]
+  },
+  {
+    "id": "OctopusGirl_Neutral",
+    "name": "Gloopie Primo",
+    "name_zh": "梦沫姬",
+    "dex": "48B",
+    "elements": [
+      "Water",
+      "Neutral"
+    ]
+  },
+  {
+    "id": "Eagle",
+    "name": "Galeclaw",
+    "name_zh": "天擒鸟",
+    "dex": "49",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "GhostBlackCat",
+    "name": "Wispaw",
+    "name_zh": "念影喵",
+    "dex": "50",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "HawkBird",
+    "name": "Nitewing",
+    "name_zh": "疾风隼",
+    "dex": "51",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "CatBat",
+    "name": "Tombat",
+    "name_zh": "猫蝠怪",
+    "dex": "52",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "ColorfulBird",
+    "name": "Tocotoco",
+    "name_zh": "炸蛋鸟",
+    "dex": "53",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "Kirin",
+    "name": "Univolt",
+    "name_zh": "雷角马",
+    "dex": "54",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "Kirin_Ice",
+    "name": "Univolt Cryst",
+    "name_zh": "凌角马",
+    "dex": "54B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "SharkKid",
+    "name": "Gobfin",
+    "name_zh": "鲨小子",
+    "dex": "55",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "SharkKid_Fire",
+    "name": "Gobfin Ignis",
+    "name_zh": "红小鲨",
+    "dex": "55B",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "Werewolf",
+    "name": "Loupmoon",
+    "name_zh": "月镰魔",
+    "dex": "56",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "Werewolf_Ice",
+    "name": "Loupmoon Cryst",
+    "name_zh": "霜镰魔",
+    "dex": "56B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "DarkCrow",
+    "name": "Cawgnito",
+    "name_zh": "黑鸦隐士",
+    "dex": "57",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "FlameBuffalo",
+    "name": "Arsox",
+    "name_zh": "炽焰牛",
+    "dex": "58",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "FluffyBird",
+    "name": "Muffly",
+    "name_zh": "雪绵啾",
+    "dex": "59",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "LittleBriarRose",
+    "name": "Bristla",
+    "name_zh": "荊棘魔仙",
+    "dex": "60",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "CuteButterfly",
+    "name": "Cinnamoth",
+    "name_zh": "幻悦蝶",
+    "dex": "61",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "ElecPomeranian",
+    "name": "Puffolt",
+    "name_zh": "电汪汪",
+    "dex": "62",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "FairyDragon",
+    "name": "Elphidran",
+    "name_zh": "精灵龙",
+    "dex": "63",
+    "elements": [
+      "Dragon"
+    ]
+  },
+  {
+    "id": "FairyDragon_Water",
+    "name": "Elphidran Aqua",
+    "name_zh": "水灵龙",
+    "dex": "63B",
+    "elements": [
+      "Dragon",
+      "Water"
+    ]
+  },
+  {
+    "id": "BirdDragon",
+    "name": "Vanwyrm",
+    "name_zh": "烽歌龙",
+    "dex": "64",
+    "elements": [
+      "Fire",
+      "Dark"
+    ]
+  },
+  {
+    "id": "BirdDragon_Ice",
+    "name": "Vanwyrm Cryst",
+    "name_zh": "霜歌龙",
+    "dex": "64B",
+    "elements": [
+      "Ice",
+      "Dark"
+    ]
+  },
+  {
+    "id": "CatVampire",
+    "name": "Felbat",
+    "name_zh": "夜幕魔蝠",
+    "dex": "65",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "VioletFairy",
+    "name": "Vaelet",
+    "name_zh": "薇莉塔",
+    "dex": "66",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "SoldierBee",
+    "name": "Beegarde",
+    "name_zh": "骑士蜂",
+    "dex": "67",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "QueenBee",
+    "name": "Elizabee",
+    "name_zh": "女皇蜂",
+    "dex": "68",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "PinkLizard",
+    "name": "Lovander",
+    "name_zh": "博爱蜥",
+    "dex": "69",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "NaughtyCat",
+    "name": "Grintale",
+    "name_zh": "笑魇猫",
+    "dex": "70",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "PurpleSpider",
+    "name": "Tarantriss",
+    "name_zh": "桃蛛娘",
+    "dex": "71",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "IceSeal",
+    "name": "Polapup",
+    "name_zh": "香草豹冰",
+    "dex": "72",
+    "elements": [
+      "Ice",
+      "Water"
+    ]
+  },
+  {
+    "id": "IceSeal_Ground",
+    "name": "Polapup Terra",
+    "name_zh": "巧克力豹冰",
+    "dex": "72B",
+    "elements": [
+      "Ice",
+      "Ground"
+    ]
+  },
+  {
+    "id": "LizardMan",
+    "name": "Leezpunk",
+    "name_zh": "朋克蜥",
+    "dex": "73",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "LizardMan_Fire",
+    "name": "Leezpunk Ignis",
+    "name_zh": "热血蜥",
+    "dex": "73B",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "Gorilla",
+    "name": "Gorirat",
+    "name_zh": "铁拳猿",
+    "dex": "74",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "Gorilla_Ground",
+    "name": "Gorirat Terra",
+    "name_zh": "石掌猿",
+    "dex": "74B",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "Serpent",
+    "name": "Surfent",
+    "name_zh": "滑水蛇",
+    "dex": "75",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "Serpent_Ground",
+    "name": "Surfent Terra",
+    "name_zh": "流沙蛇",
+    "dex": "75B",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "RobinHood",
+    "name": "Robinquill",
+    "name_zh": "羽箭射手",
+    "dex": "76",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "RobinHood_Ground",
+    "name": "Robinquill Terra",
+    "name_zh": "山岳射手",
+    "dex": "76B",
+    "elements": [
+      "Grass",
+      "Ground"
+    ]
+  },
+  {
+    "id": "FlowerRabbit",
+    "name": "Flopie",
+    "name_zh": "波娜兔",
+    "dex": "77",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "FoxMage",
+    "name": "Wixen",
+    "name_zh": "焰巫狐",
+    "dex": "78",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "FoxMage_Dark",
+    "name": "Wixen Noct",
+    "name_zh": "幽巫狐",
+    "dex": "78B",
+    "elements": [
+      "Fire",
+      "Dark"
+    ]
+  },
+  {
+    "id": "CatMage",
+    "name": "Katress",
+    "name_zh": "暗巫猫",
+    "dex": "79",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "CatMage_Fire",
+    "name": "Katress Ignis",
+    "name_zh": "炽巫猫",
+    "dex": "79B",
+    "elements": [
+      "Dark",
+      "Fire"
+    ]
+  },
+  {
+    "id": "HadesBird",
+    "name": "Helzephyr",
+    "name_zh": "雷冥鸟",
+    "dex": "80",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "HadesBird_Electric",
+    "name": "Helzephyr Lux",
+    "name_zh": "雷鸣鸟",
+    "dex": "80B",
+    "elements": [
+      "Dark",
+      "Electric"
+    ]
+  },
+  {
+    "id": "GrassMinotaur",
+    "name": "Elgrove",
+    "name_zh": "密林陶洛斯",
+    "dex": "81",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "GrassMinotaur_Ice",
+    "name": "Elgrove Cryst",
+    "name_zh": "冰峰陶洛斯",
+    "dex": "81B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "Mutant",
+    "name": "Lunaris",
+    "name_zh": "秘斯媞雅",
+    "dex": "82",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "FengyunDeeper",
+    "name": "Fenglope",
+    "name_zh": "云海鹿",
+    "dex": "83",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "FengyunDeeper_Electric",
+    "name": "Fenglope Lux",
+    "name_zh": "雷隐鹿",
+    "dex": "83B",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "FlowerDinosaur",
+    "name": "Dinossom",
+    "name_zh": "花冠龙",
+    "dex": "84",
+    "elements": [
+      "Grass",
+      "Dragon"
+    ]
+  },
+  {
+    "id": "FlowerDinosaur_Electric",
+    "name": "Dinossom Lux",
+    "name_zh": "雷冠龙",
+    "dex": "84B",
+    "elements": [
+      "Electric",
+      "Dragon"
+    ]
+  },
+  {
+    "id": "Ronin",
+    "name": "Bushi",
+    "name_zh": "浪刃武士",
+    "dex": "85",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "Ronin_Dark",
+    "name": "Bushi Noct",
+    "name_zh": "鬼刃武士",
+    "dex": "85B",
+    "elements": [
+      "Fire",
+      "Dark"
+    ]
+  },
+  {
+    "id": "IceCrocodile",
+    "name": "Munchill",
+    "name_zh": "肚肚鳄",
+    "dex": "86",
+    "elements": [
+      "Ice",
+      "Water"
+    ]
+  },
+  {
+    "id": "GrassMammoth",
+    "name": "Mammorest",
+    "name_zh": "森猛犸",
+    "dex": "87",
+    "elements": [
+      "Grass",
+      "Ground"
+    ]
+  },
+  {
+    "id": "GrassMammoth_Ice",
+    "name": "Mammorest Cryst",
+    "name_zh": "雪猛犸",
+    "dex": "87B",
+    "elements": [
+      "Ice",
+      "Ground"
+    ]
+  },
+  {
+    "id": "StuffedShark",
+    "name": "Finsider",
+    "name_zh": "布偶鲨",
+    "dex": "88",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "StuffedShark_Fire",
+    "name": "Finsider Ignis",
+    "name_zh": "粉粉布偶鲨",
+    "dex": "88B",
+    "elements": [
+      "Water",
+      "Fire"
+    ]
+  },
+  {
+    "id": "FlowerDoll",
+    "name": "Petallia",
+    "name_zh": "花丽娜",
+    "dex": "89",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "FlowerDoll_Fire",
+    "name": "Petallia Ignis",
+    "name_zh": "樱丽娜",
+    "dex": "89B",
+    "elements": [
+      "Grass",
+      "Fire"
+    ]
+  },
+  {
+    "id": "PandaGirl",
+    "name": "Leafan",
+    "name_zh": "莉芳",
+    "dex": "90",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "Baphomet",
+    "name": "Incineram",
+    "name_zh": "炎魔羊",
+    "dex": "91",
+    "elements": [
+      "Fire",
+      "Dark"
+    ]
+  },
+  {
+    "id": "Baphomet_Dark",
+    "name": "Incineram Noct",
+    "name_zh": "暗魔羊",
+    "dex": "91B",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "RaijinDaughter",
+    "name": "Dazzi",
+    "name_zh": "雷鸣童子",
+    "dex": "92",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "RaijinDaughter_Water",
+    "name": "Dazzi Noct",
+    "name_zh": "天阴童子",
+    "dex": "92B",
+    "elements": [
+      "Dark",
+      "Electric"
+    ]
+  },
+  {
+    "id": "FireKirin",
+    "name": "Pyrin",
+    "name_zh": "火麒麟",
+    "dex": "93",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "FireKirin_Dark",
+    "name": "Pyrin Noct",
+    "name_zh": "邪麒麟",
+    "dex": "93B",
+    "elements": [
+      "Fire",
+      "Dark"
+    ]
+  },
+  {
+    "id": "LazyDragon",
+    "name": "Relaxaurus",
+    "name_zh": "佩克龙",
+    "dex": "94",
+    "elements": [
+      "Dragon",
+      "Water"
+    ]
+  },
+  {
+    "id": "LazyDragon_Electric",
+    "name": "Relaxaurus Lux",
+    "name_zh": "派克龙",
+    "dex": "94B",
+    "elements": [
+      "Dragon",
+      "Electric"
+    ]
+  },
+  {
+    "id": "IceFox",
+    "name": "Foxcicle",
+    "name_zh": "吹雪狐",
+    "dex": "95",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "ThunderBird",
+    "name": "Beakon",
+    "name_zh": "迅雷鸟",
+    "dex": "96",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "ThunderBird_Ice",
+    "name": "Beakon Cryst",
+    "name_zh": "疾霜鸟",
+    "dex": "96B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "GhostAnglerfish",
+    "name": "Ghangler",
+    "name_zh": "冥灯鱼",
+    "dex": "97",
+    "elements": [
+      "Dark",
+      "Water"
+    ]
+  },
+  {
+    "id": "GhostAnglerfish_Fire",
+    "name": "Ghangler Ignis",
+    "name_zh": "炙灯鱼",
+    "dex": "97B",
+    "elements": [
+      "Fire",
+      "Water"
+    ]
+  },
+  {
+    "id": "ThunderDog",
+    "name": "Rayhound",
+    "name_zh": "霹雳犬",
+    "dex": "98",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "ThunderDog_Ice",
+    "name": "Rayhound Cryst",
+    "name_zh": "凛光犬",
+    "dex": "98B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "DarkScorpion",
+    "name": "Menasting",
+    "name_zh": "冥铠蝎",
+    "dex": "99",
+    "elements": [
+      "Dark",
+      "Ground"
+    ]
+  },
+  {
+    "id": "DarkScorpion_Ground",
+    "name": "Menasting Terra",
+    "name_zh": "金铠蝎",
+    "dex": "99B",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "CactusDoll",
+    "name": "Needoll",
+    "name_zh": "球抱苞",
+    "dex": "100",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "CactusDoll_Dark",
+    "name": "Needoll Noct",
+    "name_zh": "妖抱苞",
+    "dex": "100B",
+    "elements": [
+      "Dark",
+      "Grass"
+    ]
+  },
+  {
+    "id": "IceDeer",
+    "name": "Reindrix",
+    "name_zh": "严冬鹿",
+    "dex": "101",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "GrassPanda",
+    "name": "Mossanda",
+    "name_zh": "叶胖达",
+    "dex": "102",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "GrassPanda_Electric",
+    "name": "Mossanda Lux",
+    "name_zh": "雷胖达",
+    "dex": "102B",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "WeaselDragon",
+    "name": "Chillet",
+    "name_zh": "疾旋鼬",
+    "dex": "103",
+    "elements": [
+      "Ice",
+      "Dragon"
+    ]
+  },
+  {
+    "id": "WeaselDragon_Fire",
+    "name": "Chillet Ignis",
+    "name_zh": "桃旋鼬",
+    "dex": "103B",
+    "elements": [
+      "Fire",
+      "Dragon"
+    ]
+  },
+  {
+    "id": "RedArmorBird",
+    "name": "Ragnahawk",
+    "name_zh": "燧火鸟",
+    "dex": "104",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "VolcanoDragon",
+    "name": "Moldron",
+    "name_zh": "流焰龙",
+    "dex": "105",
+    "elements": [
+      "Fire",
+      "Ground"
+    ]
+  },
+  {
+    "id": "VolcanoDragon_Ice",
+    "name": "Moldron Cryst",
+    "name_zh": "川霜龙",
+    "dex": "105B",
+    "elements": [
+      "Ice",
+      "Ground"
+    ]
+  },
+  {
+    "id": "TropicalOstrich",
+    "name": "Palumba",
+    "name_zh": "咕咕桑葩",
+    "dex": "106",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "DrillGame",
+    "name": "Digtoise",
+    "name_zh": "碎岩龟",
+    "dex": "107",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "SakuraSaurus",
+    "name": "Broncherry",
+    "name_zh": "连理龙",
+    "dex": "108",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "SakuraSaurus_Water",
+    "name": "Broncherry Aqua",
+    "name_zh": "海誓龙",
+    "dex": "108B",
+    "elements": [
+      "Grass",
+      "Water"
+    ]
+  },
+  {
+    "id": "LazyCatfish",
+    "name": "Dumud",
+    "name_zh": "趴趴鲶",
+    "dex": "109",
+    "elements": [
+      "Ground",
+      "Water"
+    ]
+  },
+  {
+    "id": "LazyCatfish_Gold",
+    "name": "Dumud Gild",
+    "name_zh": "梆梆鲶",
+    "dex": "109B",
+    "elements": [
+      "Ground",
+      "Water"
+    ]
+  },
+  {
+    "id": "Plesiosaur",
+    "name": "Braloha",
+    "name_zh": "梁叶龙",
+    "dex": "110",
+    "elements": [
+      "Grass",
+      "Ground"
+    ]
+  },
+  {
+    "id": "AmaterasuWolf",
+    "name": "Kitsun",
+    "name_zh": "苍焰狼",
+    "dex": "111",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "AmaterasuWolf_Dark",
+    "name": "Kitsun Noct",
+    "name_zh": "幽焰狼",
+    "dex": "111B",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "Manticore",
+    "name": "Blazehowl",
+    "name_zh": "狱焰王",
+    "dex": "112",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "Manticore_Dark",
+    "name": "Blazehowl Noct",
+    "name_zh": "狱阎王",
+    "dex": "112B",
+    "elements": [
+      "Fire",
+      "Dark"
+    ]
+  },
+  {
+    "id": "HerculesBeetle",
+    "name": "Warsect",
+    "name_zh": "铠格力斯",
+    "dex": "113",
+    "elements": [
+      "Ground",
+      "Grass"
+    ]
+  },
+  {
+    "id": "HerculesBeetle_Ground",
+    "name": "Warsect Terra",
+    "name_zh": "格鲁力斯",
+    "dex": "113B",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "SnowPeafowl",
+    "name": "Frostplume",
+    "name_zh": "白真雪雀",
+    "dex": "114",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "DarkFlameFox",
+    "name": "Majex",
+    "name_zh": "紫狐娇",
+    "dex": "115",
+    "elements": [
+      "Dark",
+      "Fire"
+    ]
+  },
+  {
+    "id": "WhiteMoth",
+    "name": "Sibelyx",
+    "name_zh": "绸笠蛾",
+    "dex": "116",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "WhiteMoth_Neutral",
+    "name": "Sibelyx Primo",
+    "name_zh": "绢笠蛾",
+    "dex": "116B",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "GhostBeast",
+    "name": "Maraith",
+    "name_zh": "噬魂兽",
+    "dex": "117",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "MushroomDragon",
+    "name": "Shroomer",
+    "name_zh": "菇咚",
+    "dex": "118",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "MushroomDragon_Dark",
+    "name": "Shroomer Noct",
+    "name_zh": "菇波",
+    "dex": "118B",
+    "elements": [
+      "Grass",
+      "Dark"
+    ]
+  },
+  {
+    "id": "IceWitch",
+    "name": "Icelyn",
+    "name_zh": "冰姬灵",
+    "dex": "119",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "MummyPal",
+    "name": "Gildra",
+    "name_zh": "缚乃伊",
+    "dex": "120",
+    "elements": [
+      "Dark",
+      "Ground"
+    ]
+  },
+  {
+    "id": "Umihebi",
+    "name": "Jormuntide",
+    "name_zh": "覆海龙",
+    "dex": "121",
+    "elements": [
+      "Dragon",
+      "Water"
+    ]
+  },
+  {
+    "id": "Umihebi_Fire",
+    "name": "Jormuntide Ignis",
+    "name_zh": "腾炎龙",
+    "dex": "121B",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ]
+  },
+  {
+    "id": "Suzaku",
+    "name": "Suzaku",
+    "name_zh": "朱雀",
+    "dex": "122",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "Suzaku_Water",
+    "name": "Suzaku Aqua",
+    "name_zh": "清雀",
+    "dex": "122B",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "FeatherOstrich",
+    "name": "Dazemu",
+    "name_zh": "战冠雀",
+    "dex": "123",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "SkyDragon",
+    "name": "Quivern",
+    "name_zh": "天羽龙",
+    "dex": "124",
+    "elements": [
+      "Dragon"
+    ]
+  },
+  {
+    "id": "SkyDragon_Grass",
+    "name": "Quivern Botan",
+    "name_zh": "翠羽龙",
+    "dex": "124B",
+    "elements": [
+      "Dragon",
+      "Grass"
+    ]
+  },
+  {
+    "id": "LeafPrincess",
+    "name": "Lullu",
+    "name_zh": "春彩娘",
+    "dex": "125",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "SmallArmadillo",
+    "name": "Kikit",
+    "name_zh": "球犰",
+    "dex": "126",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "GuardianDog",
+    "name": "Yakumo",
+    "name_zh": "八云犬",
+    "dex": "127",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "SwordCutlassfish",
+    "name": "Skutlass",
+    "name_zh": "鞘刀鱼",
+    "dex": "128",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "SwordCutlassfish_Fire",
+    "name": "Skutlass Ignis",
+    "name_zh": "炼刃鱼",
+    "dex": "128B",
+    "elements": [
+      "Water",
+      "Fire"
+    ]
+  },
+  {
+    "id": "VolcanicMonster",
+    "name": "Reptyro",
+    "name_zh": "熔岩兽",
+    "dex": "129",
+    "elements": [
+      "Fire",
+      "Ground"
+    ]
+  },
+  {
+    "id": "VolcanicMonster_Ice",
+    "name": "Reptyro Cryst",
+    "name_zh": "寒霜兽",
+    "dex": "129B",
+    "elements": [
+      "Ice",
+      "Ground"
+    ]
+  },
+  {
+    "id": "NightBlueHorse",
+    "name": "Starryon",
+    "name_zh": "夜冥驹",
+    "dex": "130",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "NightBlueHorse_Neutral",
+    "name": "Starryon Primo",
+    "name_zh": "日耀驹",
+    "dex": "130B",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "RockBeast",
+    "name": "Pierdon",
+    "name_zh": "磐峰兽",
+    "dex": "131",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "RockBeast_Ice",
+    "name": "Pierdon Cryst",
+    "name_zh": "寒峰兽",
+    "dex": "131B",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "WhiteTiger",
+    "name": "Cryolinx",
+    "name_zh": "冰棘兽",
+    "dex": "132",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "WhiteTiger_Ground",
+    "name": "Cryolinx Terra",
+    "name_zh": "金棘兽",
+    "dex": "132B",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "SmallYeti",
+    "name": "Snugloo",
+    "name_zh": "雪墩墩",
+    "dex": "133",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "Yeti",
+    "name": "Wumpo",
+    "name_zh": "白绒雪怪",
+    "dex": "134",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "Yeti_Grass",
+    "name": "Wumpo Botan",
+    "name_zh": "绿苔绒怪",
+    "dex": "134B",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "CandleGhost",
+    "name": "Sootseer",
+    "name_zh": "恐炬灵",
+    "dex": "135",
+    "elements": [
+      "Dark",
+      "Fire"
+    ]
+  },
+  {
+    "id": "VenusFlytrap",
+    "name": "Carnibora",
+    "name_zh": "颚莉丝",
+    "dex": "136",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "KingBahamut",
+    "name": "Blazamut",
+    "name_zh": "焰煌",
+    "dex": "137",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "KingBahamut_Dragon",
+    "name": "Blazamut Ryu",
+    "name_zh": "殁殃",
+    "dex": "137B",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ]
+  },
+  {
+    "id": "GrassGolem",
+    "name": "Dualith",
+    "name_zh": "双心岩傀",
+    "dex": "138",
+    "elements": [
+      "Ground",
+      "Grass"
+    ]
+  },
+  {
+    "id": "GrassGolem_Dark",
+    "name": "Dualith Noct",
+    "name_zh": "咒心岩傀",
+    "dex": "138B",
+    "elements": [
+      "Ground",
+      "Dark"
+    ]
+  },
+  {
+    "id": "Anubis",
+    "name": "Anubis",
+    "name_zh": "阿努比斯",
+    "dex": "139",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "Sekhmet",
+    "name": "Sekhmet",
+    "name_zh": "塞赫麦特",
+    "dex": "140",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "ScorpionMan",
+    "name": "Prixter",
+    "name_zh": "蛊刺妖",
+    "dex": "141",
+    "elements": [
+      "Dark",
+      "Ground"
+    ]
+  },
+  {
+    "id": "ScorpionMan_Electric",
+    "name": "Prixter Lux",
+    "name_zh": "电针妖",
+    "dex": "141B",
+    "elements": [
+      "Electric",
+      "Ground"
+    ]
+  },
+  {
+    "id": "CubeTurtle",
+    "name": "Tetroise",
+    "name_zh": "重岩龟",
+    "dex": "142",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "CubeTurtle_Neutral",
+    "name": "Tetroise Primo",
+    "name_zh": "净岩龟",
+    "dex": "142B",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "BadCatgirl",
+    "name": "Nyafia",
+    "name_zh": "妮瞅莎",
+    "dex": "143",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "MimicDog",
+    "name": "Mimog",
+    "name_zh": "旺财",
+    "dex": "144",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "DarkAlien",
+    "name": "Xenovader",
+    "name_zh": "杰诺贝达",
+    "dex": "145",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "WhiteAlienDragon",
+    "name": "Xenogard",
+    "name_zh": "杰诺路达",
+    "dex": "146",
+    "elements": [
+      "Dragon"
+    ]
+  },
+  {
+    "id": "BlueberryFairy",
+    "name": "Prunelia",
+    "name_zh": "梅莉姆",
+    "dex": "147",
+    "elements": [
+      "Grass",
+      "Dark"
+    ]
+  },
+  {
+    "id": "GhostRabbit",
+    "name": "Nitemary",
+    "name_zh": "魅爱莉",
+    "dex": "148",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "GhostRabbit_Grass",
+    "name": "Nitemary Botan",
+    "name_zh": "碧艾莉",
+    "dex": "148B",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "BlackPuppy",
+    "name": "Smokie",
+    "name_zh": "墨丸",
+    "dex": "149",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "BlackPuppy_Ice",
+    "name": "Smokie Cryst",
+    "name_zh": "冬丸",
+    "dex": "149B",
+    "elements": [
+      "Dark",
+      "Ice"
+    ]
+  },
+  {
+    "id": "MysteryMask",
+    "name": "Omascul",
+    "name_zh": "面惧",
+    "dex": "150",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "IceNarwhal",
+    "name": "Whalaska",
+    "name_zh": "凉晶鲸",
+    "dex": "151",
+    "elements": [
+      "Ice",
+      "Water"
+    ]
+  },
+  {
+    "id": "IceNarwhal_Fire",
+    "name": "Whalaska Ignis",
+    "name_zh": "桃晶鲸",
+    "dex": "151B",
+    "elements": [
+      "Ice",
+      "Fire"
+    ]
+  },
+  {
+    "id": "GrassRabbitMan",
+    "name": "Verdash",
+    "name_zh": "踏春兔",
+    "dex": "152",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "GrimGirl",
+    "name": "Splatterina",
+    "name_zh": "幽恋娜",
+    "dex": "153",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "GoldenHorse",
+    "name": "Gildane",
+    "name_zh": "金驰兽",
+    "dex": "154",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "SifuDog",
+    "name": "Dogen",
+    "name_zh": "汪宗师",
+    "dex": "155",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "SumoDog",
+    "name": "Bulldosu",
+    "name_zh": "力士獒",
+    "dex": "156",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "WhiteDeer",
+    "name": "Celesdir",
+    "name_zh": "净世鹿",
+    "dex": "157",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "WhiteDeer_Dark",
+    "name": "Celesdir Noct",
+    "name_zh": "织夜鹿",
+    "dex": "157B",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "BlackMetalDragon",
+    "name": "Astegon",
+    "name_zh": "魔渊龙",
+    "dex": "158",
+    "elements": [
+      "Dragon",
+      "Dark"
+    ]
+  },
+  {
+    "id": "WingGolem",
+    "name": "Knocklem",
+    "name_zh": "泰锋",
+    "dex": "159",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "WingGolem_Fire",
+    "name": "Knocklem Ignis",
+    "name_zh": "丹烽",
+    "dex": "159B",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "WhiteShieldDragon",
+    "name": "Silvegis",
+    "name_zh": "艾基鲁迦",
+    "dex": "160",
+    "elements": [
+      "Dragon"
+    ]
+  },
+  {
+    "id": "BlueThunderHorse",
+    "name": "Azurmane",
+    "name_zh": "驭雷马",
+    "dex": "161",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "LongCat",
+    "name": "Valentail",
+    "name_zh": "喵璐璐",
+    "dex": "162",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "ElecSnail",
+    "name": "Snock",
+    "name_zh": "电涡蜗",
+    "dex": "163",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "ElecSnail_Ground",
+    "name": "Snock Lux",
+    "name_zh": "金涡蜗",
+    "dex": "163B",
+    "elements": [
+      "Electric",
+      "Ground"
+    ]
+  },
+  {
+    "id": "DandelionGirl",
+    "name": "Souffline",
+    "name_zh": "蒲蒲飞芽",
+    "dex": "164",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "BrownRabbit",
+    "name": "Lapiron",
+    "name_zh": "詹兔曼",
+    "dex": "165",
+    "elements": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "HoodGhost",
+    "name": "Hoodle",
+    "name_zh": "兜兜灵",
+    "dex": "166",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "ElecLizard",
+    "name": "Slowatt",
+    "name_zh": "电懒懒",
+    "dex": "167",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "OniGhostGirl",
+    "name": "Bakemi",
+    "name_zh": "吓丝妮",
+    "dex": "168",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "KingSunfish",
+    "name": "Solmora",
+    "name_zh": "曼波王",
+    "dex": "169",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "KingSunfish_Thunder",
+    "name": "Solmora Lux",
+    "name_zh": "曼波皇",
+    "dex": "169B",
+    "elements": [
+      "Water",
+      "Electric"
+    ]
+  },
+  {
+    "id": "SleeveRabbit",
+    "name": "Lapure",
+    "name_zh": "兔绣袖",
+    "dex": "170",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "GhostDragon",
+    "name": "Eidrolon",
+    "name_zh": "灵曦龙",
+    "dex": "171",
+    "elements": [
+      "Dragon",
+      "Dark"
+    ]
+  },
+  {
+    "id": "GhostDragon_Fire",
+    "name": "Eidrolon Ignis",
+    "name_zh": "狱熙龙",
+    "dex": "171B",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ]
+  },
+  {
+    "id": "ThunderFluffyBird",
+    "name": "Dynamoff",
+    "name_zh": "雷云鹫",
+    "dex": "172",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "RedFlowerBird",
+    "name": "Tropicaw",
+    "name_zh": "大红呱",
+    "dex": "173",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "FoxExorcist",
+    "name": "Flaracle",
+    "name_zh": "昭炎狐",
+    "dex": "174",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "LotusDragon",
+    "name": "Ophydia",
+    "name_zh": "沁莲龙",
+    "dex": "175",
+    "elements": [
+      "Grass",
+      "Water"
+    ]
+  },
+  {
+    "id": "ClownRabbit",
+    "name": "Dupin",
+    "name_zh": "拉比耶尔",
+    "dex": "176",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "ThiefBird",
+    "name": "Roujay",
+    "name_zh": "盗影鸦",
+    "dex": "177",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "SnakeGirl",
+    "name": "Venusa",
+    "name_zh": "梅杜娜",
+    "dex": "178",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "MushroomLady",
+    "name": "Mycora",
+    "name_zh": "红菇娘",
+    "dex": "179",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "LanternButler",
+    "name": "Loomen",
+    "name_zh": "妖焰灯",
+    "dex": "180",
+    "elements": [
+      "Dark",
+      "Fire"
+    ]
+  },
+  {
+    "id": "MoonChild",
+    "name": "Wistella",
+    "name_zh": "缀夜星",
+    "dex": "181",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "MonochromeQueen",
+    "name": "Solenne",
+    "name_zh": "墨罗娜",
+    "dex": "182",
+    "elements": [
+      "Dark",
+      "Neutral"
+    ]
+  },
+  {
+    "id": "KabukiMan",
+    "name": "Renjishi",
+    "name_zh": "燎火舞伶",
+    "dex": "183",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "DomeArmorDragon",
+    "name": "Aegidron",
+    "name_zh": "磐甲龙",
+    "dex": "184",
+    "elements": [
+      "Dragon",
+      "Ground"
+    ]
+  },
+  {
+    "id": "ElecPanda",
+    "name": "Grizzbolt",
+    "name_zh": "暴电熊",
+    "dex": "185",
+    "elements": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "LilyQueen",
+    "name": "Lyleen",
+    "name_zh": "百合女王",
+    "dex": "186",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "LilyQueen_Dark",
+    "name": "Lyleen Noct",
+    "name_zh": "黑月女王 ",
+    "dex": "186B",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "ThunderDragonMan",
+    "name": "Orserk",
+    "name_zh": "波鲁杰克斯",
+    "dex": "187",
+    "elements": [
+      "Dragon",
+      "Electric"
+    ]
+  },
+  {
+    "id": "Horus",
+    "name": "Faleris",
+    "name_zh": "荷鲁斯",
+    "dex": "188",
+    "elements": [
+      "Fire"
+    ]
+  },
+  {
+    "id": "Horus_Water",
+    "name": "Faleris Aqua",
+    "name_zh": "伊西斯",
+    "dex": "188B",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "BlackGriffon",
+    "name": "Shadowbeak",
+    "name_zh": "异构格里芬",
+    "dex": "189",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "MoonQueen",
+    "name": "Selyne",
+    "name_zh": "辉月伊",
+    "dex": "190",
+    "elements": [
+      "Dark",
+      "Neutral"
+    ]
+  },
+  {
+    "id": "SnowTigerBeastman",
+    "name": "Bastigor",
+    "name_zh": "霜牙王",
+    "dex": "191",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "BlueSkyDragon",
+    "name": "Shaolong",
+    "name_zh": "霄龙",
+    "dex": "192",
+    "elements": [
+      "Dragon",
+      "Water"
+    ]
+  },
+  {
+    "id": "Mothman",
+    "name": "Silvance",
+    "name_zh": "暮尘蛾",
+    "dex": "193",
+    "elements": [
+      "Grass"
+    ]
+  },
+  {
+    "id": "FlowerPrince",
+    "name": "Dandilord",
+    "name_zh": "夜蔓爵",
+    "dex": "194",
+    "elements": [
+      "Grass",
+      "Dark"
+    ]
+  },
+  {
+    "id": "NightLady",
+    "name": "Bellanoir",
+    "name_zh": "贝菈诺娃",
+    "dex": "195",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "NightLady_Dark",
+    "name": "Bellanoir Libero",
+    "name_zh": "贝菈露洁",
+    "dex": "195B",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "DarkMechaDragon",
+    "name": "Xenolord",
+    "name_zh": "杰诺多兰",
+    "dex": "196",
+    "elements": [
+      "Dark",
+      "Dragon"
+    ]
+  },
+  {
+    "id": "LegendDeer",
+    "name": "Hartalis",
+    "name_zh": "默世鹿",
+    "dex": "197",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "SaintCentaur",
+    "name": "Paladius",
+    "name_zh": "圣光骑士",
+    "dex": "198",
+    "elements": [
+      "Neutral"
+    ]
+  },
+  {
+    "id": "BlackCentaur",
+    "name": "Necromus",
+    "name_zh": "混沌骑士",
+    "dex": "199",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "IceHorse",
+    "name": "Frostallion",
+    "name_zh": "唤冬兽",
+    "dex": "200",
+    "elements": [
+      "Ice"
+    ]
+  },
+  {
+    "id": "IceHorse_Dark",
+    "name": "Frostallion Noct",
+    "name_zh": "唤夜兽",
+    "dex": "200B",
+    "elements": [
+      "Dark"
+    ]
+  },
+  {
+    "id": "PoseidonOrca",
+    "name": "Neptilius",
+    "name_zh": "海皇鲸",
+    "dex": "201",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "JetDragon",
+    "name": "Jetragon",
+    "name_zh": "空涡龙",
+    "dex": "202",
+    "elements": [
+      "Dragon"
+    ]
+  },
+  {
+    "id": "KingWhale",
+    "name": "Panthalus",
+    "name_zh": "奥沧鲸",
+    "dex": "203",
+    "elements": [
+      "Water"
+    ]
+  },
+  {
+    "id": "WorldTreeDragon",
+    "name": "Astralym",
+    "name_zh": "枯星龙",
+    "dex": "204",
+    "elements": []
+  }
+]

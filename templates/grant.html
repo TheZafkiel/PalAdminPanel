@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}物品与帕鲁 · PalAdminPanel{% endblock %}
+{% block heading %}物品与帕鲁{% endblock %}
+{% set item_category_names = {
+  'Materials': '材料', 'Pal Sphere': '帕鲁球', 'Ammo': '弹药',
+  'Dev Items': '开发物品', 'Consumables': '消耗品', 'Weapons': '武器',
+  'Essential': '重要物品', 'Armor': '防具', 'Accessories': '饰品',
+  'Other': '其他', 'Food': '食物', 'Pal Summon': '帕鲁召唤',
+  'Boss Reward': '首领奖励'
+} %}
+{% set element_names = {
+  'Dark': '暗', 'Grass': '草', 'Ground': '地', 'Water': '水',
+  'Fire': '火', 'Ice': '冰', 'Neutral': '无', 'Electric': '雷',
+  'Dragon': '龙'
+} %}
+{% macro player_picker(target) %}
+<div class="player-picker">
+  <label>搜索玩家<input class="player-filter" type="search" data-target="{{ target }}" placeholder="输入玩家名、UserId 或公会名" autocomplete="off"></label>
+  <label>选择玩家
+    <select id="{{ target }}" name="user_id" size="4">
+      {% for player in players %}
+      <option value="{{ player.paldefender_id }}" data-search="{{ player.name }} {{ player.paldefender_id }} {{ player.player_uid }} {{ player.guild_name }}">{{ '🟢' if player.online else '⚪' }} {{ player.name }} · {{ player.paldefender_id }}{% if player.guild_name %} · {{ player.guild_name }}{% endif %}</option>
+      {% endfor %}
+    </select>
+  </label>
+  <div class="player-count" data-for="{{ target }}"></div>
+  <details class="manual-player"><summary>玩家不在列表？手动输入 UserId</summary><input name="custom_user_id" placeholder="steam_7656…" pattern="[A-Za-z0-9_-]+"></details>
+</div>
+{% endmacro %}
+{% block content %}
+<div class="page-intro"><div><p class="eyebrow">PALDEFENDER TOOLS</p><h2>玩家发放</h2><p>适配 PalDefender 1.8.3；可从在线玩家选择，也可手动输入完整 UserId。</p></div></div>
+{% if error %}<div class="inline-error">{{ error }}</div>{% endif %}
+<section class="form-grid">
+  <form class="panel form-card async-grant-form" action="{{ url_for('grant_item') }}" method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="form-icon amber">◇</div><p class="eyebrow">/GIVE</p><h3>发放物品</h3><p class="form-description">向指定玩家背包加入物品。</p>
+    {{ player_picker('item-player-id') }}
+    <div class="catalog-picker catalog-browser" data-input="item-id">
+      <input id="item-id" name="item_id" type="hidden" value="{{ items[0].id if items else '' }}" required>
+      <div class="catalog-toolbar">
+        <label>搜索物品<input class="catalog-filter" type="search" placeholder="输入中文名、英文名、分类或内部 ID" autocomplete="off"></label>
+        <label>游戏分类
+          <select class="catalog-category">
+            <option value="">全部分类</option>
+            {% for category in items|map(attribute='category')|unique|sort %}
+            <option value="{{ category }}">{{ item_category_names.get(category, category) }} · {{ category }}</option>
+            {% endfor %}
+          </select>
+        </label>
+      </div>
+      <div class="catalog-count" data-for="item-id"></div>
+      <div class="catalog-card-grid" role="listbox" aria-label="物品列表">
+        {% for item in items %}
+        <button class="catalog-card{% if loop.first %} selected{% endif %}" type="button" role="option" aria-selected="{{ 'true' if loop.first else 'false' }}" data-value="{{ item.id }}" data-category="{{ item.category }}" data-search="{{ item.name_zh }} {{ item.name }} {{ item.id }} {{ item.category }} {{ item_category_names.get(item.category, '') }}">
+          <span class="catalog-card-copy"><strong>{{ item.name_zh }}</strong><span>{{ item.name }}</span><code>{{ item.id }}</code></span>
+          <span class="catalog-tag">{{ item_category_names.get(item.category, item.category) }}</span>
+        </button>
+        {% endfor %}
+      </div>
+      <div class="catalog-empty" hidden>没有找到符合条件的物品。</div>
+    </div>
+    <label>手动输入物品 ID <span>填写后优先使用</span><input name="custom_item_id" placeholder="例如 PalSphere_Legend" pattern="[A-Za-z0-9_-]+"></label>
+    <label>数量<input name="amount" type="number" value="1" min="1" max="999999" required></label>
+    <button class="button primary full" type="submit">确认发放</button>
+    <div class="inline-action-result" aria-live="polite"></div>
+  </form>
+  <form class="panel form-card async-grant-form" action="{{ url_for('grant_pal') }}" method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="form-icon cyan">◈</div><p class="eyebrow">/GIVEPAL</p><h3>发放帕鲁</h3><p class="form-description">生成一只指定等级的帕鲁给玩家。</p>
+    {{ player_picker('pal-player-id') }}
+    <div class="catalog-picker catalog-browser" data-input="pal-id">
+      <input id="pal-id" name="pal_id" type="hidden" value="{{ pals[0].id if pals else '' }}" required>
+      <div class="catalog-toolbar">
+        <label>搜索帕鲁<input class="catalog-filter" type="search" placeholder="输入中文名、英文名、图鉴编号、属性或内部 ID" autocomplete="off"></label>
+        <label>官方属性
+          <select class="catalog-category">
+            <option value="">全部属性</option>
+            {% for element, label in element_names.items() %}<option value="{{ element }}">{{ label }}属性 · {{ element }}</option>{% endfor %}
+          </select>
+        </label>
+      </div>
+      <div class="catalog-count" data-for="pal-id"></div>
+      <div class="catalog-card-grid pal-card-grid" role="listbox" aria-label="帕鲁列表">
+        {% for pal in pals %}
+        <button class="catalog-card pal-card{% if loop.first %} selected{% endif %}" type="button" role="option" aria-selected="{{ 'true' if loop.first else 'false' }}" data-value="{{ pal.id }}" data-category="{{ pal.elements|join('|') }}" data-search="{{ pal.name_zh }} {{ pal.name }} {{ pal.id }} {{ pal.dex }} {{ pal.elements|join(' ') }}{% for element in pal.elements %} {{ element_names.get(element, element) }}{% endfor %}">
+          <span class="catalog-card-copy"><strong>#{{ pal.dex }} · {{ pal.name_zh }}</strong><span>{{ pal.name }}</span><code>{{ pal.id }}</code></span>
+          <span class="catalog-elements">{% for element in pal.elements %}<i class="element-{{ element|lower }}">{{ element_names.get(element, element) }}</i>{% endfor %}</span>
+        </button>
+        {% endfor %}
+      </div>
+      <div class="catalog-empty" hidden>没有找到符合条件的帕鲁。</div>
+    </div>
+    <label>手动输入帕鲁 ID <span>填写后优先使用</span><input name="custom_pal_id" placeholder="例如 Anubis" pattern="[A-Za-z0-9_-]+"></label>
+    <label>等级<input name="level" type="number" value="1" min="1" max="255" required></label>
+    <button class="button primary full" type="submit">确认生成</button>
+    <div class="inline-action-result" aria-live="polite"></div>
+  </form>
+  <form class="panel form-card experience-card async-grant-form" action="{{ url_for('grant_experience') }}" method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="experience-header">
+      <div class="form-icon purple">✦</div>
+      <div><p class="eyebrow">/GIVE_EXP</p><h3>发放经验</h3><p class="form-description">选择玩家并增加角色经验值。</p></div>
+    </div>
+    <div class="experience-layout">
+      {{ player_picker('exp-player-id') }}
+      <div class="experience-controls">
+        <label>经验值<input name="amount" type="number" value="1000" min="1" max="2000000000" required></label>
+        <p class="field-hint">请输入要增加的经验值，最大 2,000,000,000。</p>
+        <button class="button primary full" type="submit">发放经验</button>
+        <div class="inline-action-result" aria-live="polite"></div>
+      </div>
+    </div>
+  </form>
+</section>
+<div class="notice"><strong>目录说明</strong><p>当前缓存包含 {{ items|length }} 个游戏内合法物品和 {{ pals|length }} 个帕鲁。数据来自 PalDefender 文档推荐的 Paldeck；游戏更新后可运行 refresh_catalogs.bat 刷新，自定义 ID 不允许空格或命令分隔符。</p></div>
+{% endblock %}

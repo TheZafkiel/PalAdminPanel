@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}玩家管理 · PalAdminPanel{% endblock %}
+{% block heading %}玩家管理{% endblock %}
+{% block content %}
+<div class="page-intro"><div><p class="eyebrow">PLAYER OPERATIONS</p><h2>在线玩家</h2><p>列表来自实时 ShowPlayers 查询。踢出和封禁使用 Palworld 官方管理命令。</p></div><a class="button secondary" href="{{ url_for('players_page') }}">刷新列表</a></div>
+{% if error %}<div class="inline-error">{{ error }}</div>{% endif %}
+<section class="panel table-panel">
+  {% if players %}
+  <div class="table-wrap"><table><thead><tr><th>玩家</th><th>状态</th><th>Player UID</th><th>真实 UserId</th><th class="actions-cell">操作</th></tr></thead><tbody>
+    {% for player in players %}
+    <tr><td><div class="player-cell"><span class="avatar">{{ player.name[:1]|upper }}</span><div><strong>{{ player.name }}</strong>{% if player.guild_name %}<small>{{ player.guild_name }}</small>{% endif %}</div></div></td><td>{% if player.online %}<span class="status-pill online"><span></span>在线</span>{% else %}<span class="muted">{{ player.status or '离线' }}</span>{% endif %}</td><td><code>{{ player.player_uid }}</code></td><td><code>{{ player.platform_id or '—' }}</code></td><td class="actions-cell"><div class="action-group">
+      <form action="{{ url_for('player_action') }}" method="post" class="confirm-form" data-confirm="确定要将 {{ player.name }} 踢出服务器吗？"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="action" value="kick"><input type="hidden" name="player_id" value="{{ player.paldefender_id }}"><button class="button small secondary" type="submit">踢出</button></form>
+      <form action="{{ url_for('player_action') }}" method="post" class="confirm-form ban-form" data-confirm="封禁后该玩家将无法再次加入。确定封禁 {{ player.name }}？"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="action" value="ban"><input type="hidden" name="player_id" value="{{ player.paldefender_id }}"><input type="hidden" name="confirmation" value=""><button class="button small danger" type="submit">封禁</button></form>
+    </div></td></tr>
+    {% endfor %}
+  </tbody></table></div>
+  {% else %}<div class="empty-state tall"><span>◎</span><h3>当前没有在线玩家</h3><p>如果服务器在线，玩家加入后刷新即可看到。</p></div>{% endif %}
+</section>
+<div class="notice"><strong>注意</strong><p>封禁属于高风险操作，后台会要求二次确认并写入操作日志。</p></div>
+{% endblock %}

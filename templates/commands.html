@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}命令中心 · PalAdminPanel{% endblock %}
+{% block heading %}命令中心{% endblock %}
+{% block content %}
+<div class="page-intro">
+  <div>
+    <p class="eyebrow">LIVE RCON COMMANDS</p>
+    <h2>PalDefender 全部指令</h2>
+    <p>清单直接读取自当前服务器，PalDefender 更新后无需手工维护。</p>
+  </div>
+</div>
+{% if error %}<div class="inline-error">{{ error }}</div>{% endif %}
+<div class="command-layout">
+<section class="panel command-panel">
+  {% if commands %}
+  <form class="command-form" action="{{ url_for('command_execute') }}" method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <input type="hidden" name="confirmation" value="">
+    <label>搜索指令<input class="command-filter" type="search" placeholder="输入中文用途或 give、ban、spawn、tech…" autocomplete="off"></label>
+    <label>服务器指令
+      <select class="command-select" name="command_name" size="12" required>
+        {% for command in commands %}
+        <option value="{{ command.name }}" data-search="{{ command.name }} {{ command.help.title }} {{ command.help.detail }}" data-read-only="{{ 'true' if command.read_only else 'false' }}" data-argument-count="{{ command.argument_count }}" data-title="{{ command.help.title }}" data-syntax="{{ command.help.syntax }}" data-detail="{{ command.help.detail }}">{{ command.name }} · {{ command.help.title }} · {{ '只读' if command.read_only else '会修改服务器' }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <div class="command-meta" aria-live="polite"></div>
+    <section class="command-assistant">
+      <div class="assistant-head"><div><p class="eyebrow">PARAMETER ASSISTANT</p><h3>参数助手</h3></div><span>点击即可复制或填入</span></div>
+      {% if players_error %}<div class="inline-error compact">{{ players_error }}</div>{% endif %}
+      <div class="assistant-grid">
+        <div class="assistant-block">
+          <label>搜索玩家<input class="quick-filter" type="search" data-container="command-player-list" placeholder="玩家名、UserId、公会"></label>
+          <div class="quick-choice-list" id="command-player-list">
+            {% for player in players %}
+            <div class="quick-choice" data-search="{{ player.name }} {{ player.paldefender_id }} {{ player.guild_name }}">
+              <div><strong>{{ player.name }}</strong><code>{{ player.paldefender_id }}</code></div>
+              <button type="button" class="button ghost small copy-value" data-value="{{ player.paldefender_id }}">复制 ID</button>
+              <button type="button" class="button secondary small insert-value" data-value="{{ player.paldefender_id }}" data-target=".command-arguments">填入参数</button>
+            </div>
+            {% else %}<p class="assistant-empty">当前没有可选玩家。</p>{% endfor %}
+          </div>
+        </div>
+        <div class="assistant-block egg-builder" hidden>
+          <p class="assistant-title">帕鲁蛋参数生成器</p>
+          <label class="egg-player-field">目标玩家<select class="egg-player">{% for player in players %}<option value="{{ player.paldefender_id }}">{{ player.name }} · {{ player.paldefender_id }}</option>{% endfor %}</select></label>
+          <label>EggId<select class="egg-id">{% for egg in egg_ids %}<option value="{{ egg.id }}">{{ egg.name }} · {{ egg.id }}</option>{% endfor %}</select></label>
+          <label>搜索 PalId<input class="catalog-filter" type="search" data-target="command-pal-id" placeholder="中文名、英文名或 PalId"></label>
+          <select id="command-pal-id" class="egg-pal" size="6">{% for pal in pals %}<option value="{{ pal.id }}" data-search="{{ pal.name_zh }} {{ pal.name }} {{ pal.id }}">#{{ pal.dex }} · {{ pal.name_zh }} · {{ pal.name }} · {{ pal.id }}</option>{% endfor %}</select>
+          <div class="catalog-count" data-for="command-pal-id"></div>
+          <label>等级<input class="egg-level" type="number" min="1" max="255" value="1"></label>
+          <button type="button" class="button secondary build-egg-arguments">生成并填入参数</button>
+        </div>
+      </div>
+    </section>
+    <label>参数<input class="command-arguments" name="arguments" autocomplete="off" placeholder="按顺序填写参数，参数之间用空格分隔"></label>
+    <p class="field-hint">不要输入开头的 /。选择列表中的指令后，只在参数框填写玩家 ID、数量等参数。</p>
+    <button class="button primary" type="submit">执行选中的指令</button>
+  </form>
+  {% else %}
+  <div class="empty-state tall"><span>!</span><h3>无法读取指令清单</h3><p>确认 RCON 已开启且本机可以访问服务器的 RCON 端口。</p></div>
+  {% endif %}
+</section>
+<section class="panel command-history-panel">
+  <div class="panel-head">
+    <div><p class="eyebrow">COMMAND OUTPUT</p><h3>执行记录</h3></div>
+    <span class="history-count">最近 {{ command_history|length }} 条</span>
+  </div>
+  <div class="command-history" id="command-history" aria-live="polite">
+    {% for record in command_history %}
+    <article class="command-record {{ 'success' if record.success else 'error' }}">
+      <div><time>{{ record.timestamp }}</time><span>{{ '成功' if record.success else '失败' }}</span></div>
+      <code>&gt; {{ record.command }}</code>
+      <pre>{{ record.result }}</pre>
+    </article>
+    {% else %}
+    <div class="empty-state command-history-empty"><span>⌁</span><h4>暂无执行记录</h4><p>执行指令后，服务器返回内容会显示在这里。</p></div>
+    {% endfor %}
+  </div>
+</section>
+</div>
+<div class="copy-toast" role="status" aria-live="polite"></div>
+<div class="notice"><strong>安全提示</strong><p>只有查询类指令可直接执行；其余指令都会弹出二次确认。删除帕鲁、清空背包、摧毁基地等操作无法由面板自动撤销。</p></div>
+{% endblock %}

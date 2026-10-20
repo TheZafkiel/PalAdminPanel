@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}登录 · PalAdminPanel{% endblock %}
+{% block auth_content %}
+<main class="login-shell">
+  <section class="login-visual" aria-hidden="true">
+    <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    <div class="radar"><span></span><span></span><span></span><i></i></div>
+    <div class="visual-copy">
+      <p class="eyebrow">PALWORLD SERVER CONTROL</p>
+      <h1>安全地掌控<br>你的帕鲁世界</h1>
+      <p>面板仅在本机开放 · RCON 通过局域网连接</p>
+    </div>
+  </section>
+  <section class="login-panel">
+    <form class="login-card" method="post">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <div class="brand login-brand"><span class="brand-mark">PA</span><span><strong>PalAdmin</strong><small>LOCAL CONTROL</small></span></div>
+      <div class="login-heading"><p class="eyebrow">管理员入口</p><h2>欢迎回来</h2><p>登录后可执行 RCON 管理操作。</p></div>
+      <label>用户名<input name="username" type="text" autocomplete="username" maxlength="80" required autofocus></label>
+      <label>密码<input name="password" type="password" autocomplete="current-password" required></label>
+      <button class="button primary large full" type="submit">进入控制台 <span>→</span></button>
+      <p class="privacy-note">本机面板：127.0.0.1:5000 · 会话 8 小时后失效</p>
+    </form>
+  </section>
+</main>
+{% endblock %}

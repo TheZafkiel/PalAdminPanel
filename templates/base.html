@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>{% block title %}PalAdminPanel{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body class="{% if not is_logged_in %}auth-body{% endif %}">
+  {% if is_logged_in %}
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="{{ url_for('dashboard') }}" aria-label="返回概览">
+        <span class="brand-mark">PA</span>
+        <span><strong>PalAdmin</strong><small>LOCAL CONTROL</small></span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a class="nav-link {% if current_endpoint == 'dashboard' %}active{% endif %}" href="{{ url_for('dashboard') }}"><span>◫</span>概览</a>
+        <a class="nav-link {% if 'player' in current_endpoint %}active{% endif %}" href="{{ url_for('players_page') }}"><span>◎</span>玩家管理</a>
+        <a class="nav-link {% if 'grant' in current_endpoint %}active{% endif %}" href="{{ url_for('grant_page') }}"><span>＋</span>物品与帕鲁</a>
+        <a class="nav-link {% if current_endpoint in ['commands_page', 'command_execute'] %}active{% endif %}" href="{{ url_for('commands_page') }}"><span>⌘</span>命令中心</a>
+        <a class="nav-link {% if current_endpoint == 'ingame_commands_page' %}active{% endif %}" href="{{ url_for('ingame_commands_page') }}"><span>⧉</span>游戏内命令</a>
+        <a class="nav-link {% if 'server' in current_endpoint %}active{% endif %}" href="{{ url_for('server_page') }}"><span>⌁</span>服务器工具</a>
+        <a class="nav-link {% if current_endpoint == 'logs_page' %}active{% endif %}" href="{{ url_for('logs_page') }}"><span>≡</span>操作日志</a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="local-badge"><span></span>局域网模式</div>
+        <form action="{{ url_for('logout') }}" method="post">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <button class="button ghost full" type="submit">退出登录</button>
+        </form>
+      </div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar">
+        <button class="menu-button" type="button" aria-label="打开导航" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <div>
+          <p class="eyebrow">{{ rest_endpoint }} · PALWORLD</p>
+          <h1>{% block heading %}{{ server_name }}{% endblock %}</h1>
+        </div>
+        <div class="topbar-chip">PalDefender 1.8.3</div>
+      </header>
+      <main class="content">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+          <div class="flash-stack" aria-live="polite">
+            {% for category, message in messages %}
+            <div class="flash {{ category }}">{{ message }}</div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+      </main>
+    </div>
+  </div>
+  {% else %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+      <div class="auth-flashes">
+        {% for category, message in messages %}<div class="flash {{ category }}">{{ message }}</div>{% endfor %}
+      </div>
+      {% endif %}
+    {% endwith %}
+    {% block auth_content %}{% endblock %}
+  {% endif %}
+</body>
+</html>

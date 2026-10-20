@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}服务器工具 · PalAdminPanel{% endblock %}
+{% block heading %}服务器工具{% endblock %}
+{% block content %}
+<div class="page-intro"><div><p class="eyebrow">SERVER OPERATIONS</p><h2>公告与存档</h2><p>常用操作均通过本机 RCON 执行，并记录管理员、来源 IP 和结果。</p></div></div>
+<section class="server-tools">
+  <form class="panel tool-card" action="{{ url_for('server_broadcast') }}" method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="form-icon cyan">⌁</div><div><p class="eyebrow">/PGBROADCAST</p><h3>全服公告</h3><p>PalDefender 广播支持带空格与中文的消息。</p></div>
+    <label>公告内容<textarea name="message" rows="4" maxlength="200" placeholder="例如：服务器将在 10 分钟后维护。" required></textarea><small class="field-hint">最多 200 个字符</small></label>
+    <button class="button primary" type="submit">发送公告</button>
+  </form>
+  <form class="panel tool-card save-card confirm-form" action="{{ url_for('server_save') }}" method="post" data-confirm="确定立即保存世界存档吗？">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="form-icon amber">▣</div><div><p class="eyebrow">SAVE</p><h3>保存世界</h3><p>要求服务器立即将当前世界状态写入存档。</p></div>
+    <div class="save-note"><strong>建议时机</strong><span>维护、重启或大量管理操作之后。</span></div>
+    <button class="button secondary" type="submit">立即保存</button>
+  </form>
+</section>
+<div class="notice"><strong>安全边界</strong><p>本版没有加入强制退出、关服或重启按钮，防止一次误触中断服务器。保存和公告不影响在线连接。</p></div>
+{% endblock %}

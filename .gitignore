@@ -1,0 +1,44 @@
+# Python and local runtimes
+.venv/
+.runtime/
+venv/
+env/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.py[cod]
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.codex/
+.agents/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local configuration and secrets
+config.json
+config.*.json
+!config.example.json
+.env
+.env.*
+!.env.example
+server_setup/*.json
+*.pem
+*.pfx
+*.p12
+*.key
+
+# Runtime logs
+logs/*
+!logs/.gitkeep
+*.log
+*.log.*
+
+# Local development tests are intentionally excluded from the release repository
+tests/
+requirements-dev.txt
+run_tests.bat
